@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_helps"
+            android:title="Queries" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_chat_bubble_black_24dp"
+            android:title="Chat" />
+        <item
+            android:id="@+id/doc"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Add Doctor" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_infomat"
+            android:title="Add Information" />
+
+        <!--android:icon="@drawable/infomation"
+         android:icon="@drawable/query"
+        android:icon="@drawable/infomation"
+           android:icon="@drawable/ic_person_add_black_24dp"
+             android:icon="@drawable/chats"
+             android:icon="@drawable/appo"
+             android:icon="@drawable/appo"
+              android:icon="@drawable/logou"
+        -->
+        <item
+            android:id="@+id/appoint"
+            android:icon="@drawable/ic_date"
+            android:title="Make Appointment" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_log"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>

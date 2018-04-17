@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paradise.malariastressfighter">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hospital_white_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hospital_white_24dp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Authentication.SplashWelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Authentication.UserTypeActivity" />
+        <activity android:name=".Authentication.PhoneAuth" />
+        <activity android:name=".Authentication.AdminEmailLoginActivity" />
+        <activity android:name=".Authentication.SignUp" />
+        <activity android:name=".Authentication.ResetPassword" />
+        <activity android:name=".Health.Home" />
+        <activity android:name=".Health.UploadInfo" />
+        <activity android:name=".Health.InfoActivity" />
+        <activity android:name=".Health.CallNurse" />
+        <activity android:name=".Health.StudentBoardActivity" />
+        <activity android:name=".Health.TextMessage" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Others.PostActivity" />
+        <activity android:name=".Others.SearchActivity" />
+        <activity android:name=".Others.Doctors" />
+        <activity
+            android:name=".NurseAdminActivity"
+            android:label="@string/title_activity_nurse_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AppointmentActivity" />
+        <activity android:name=".Settings"></activity>
+    </application>
+
+</manifest>

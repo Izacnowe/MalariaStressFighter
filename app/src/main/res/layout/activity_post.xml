@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paradise.malariastressfighter.Others.PostActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/insertEmail"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:hint="Enter Your Email"/>
+            <Button
+                android:id="@+id/browse_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:onClick="browseImages"
+                android:text="Browse desc Image"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/insertImages"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/insertName"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/tels" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/insertName"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:hint=" Suspected Disease "/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/insertDesc"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:hint="Enter Disease Description"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Send Info"
+                    android:onClick="uploadData"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

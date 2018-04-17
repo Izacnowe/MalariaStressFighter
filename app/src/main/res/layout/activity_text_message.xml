@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.paradise.malariastressfighter.Health.TextMessage">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:textSize="20dp"
+    android:layout_marginLeft="40dp"
+    android:textColor="#1cb3e6"
+    android:layout_height="wrap_content"
+    android:text="Send A message to the consultant"/>
+    </LinearLayout>
+
+       <Spinner
+           android:layout_marginTop="20dp"
+           android:id="@+id/phone_spinner"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:id="@+id/text_messa"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:padding="20dp"
+           android:layout_marginTop="20dp"
+           android:hint="@string/text_hint"
+
+           android:inputType="textMultiLine" />
+
+       <!--<EditText-->
+           <!--android:id="@+id/phone_text"-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:layout_marginTop="20dp"-->
+           <!--android:text="0703263161"-->
+           <!--android:visibility="invisible" />-->
+
+       <Button
+           android:id="@+id/message_btn"
+           android:text="@string/send_btn"
+           android:textSize="20dp"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+  </ScrollView>
+</RelativeLayout>

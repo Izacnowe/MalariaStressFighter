@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="match_parent"
+    tools:context="com.paradise.malariastressfighter.Others.AddInformationFragment">
+<EditText
+    android:layout_width="match_parent"
+    android:hint="Title"
+    android:id="@+id/title"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="description"
+        android:id="@+id/desc"
+
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Information"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
